@@ -1,12 +1,6 @@
 package com.rabbitmq.consumer.config;
 
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
-import org.springframework.amqp.rabbit.core.RabbitAdmin;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.core.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,21 +20,6 @@ public class RabbitmqConfig {
 
     @Value("${spring.rabbitmq.routing-key}")
     private String routingKey;
-    
-    @Bean
-    public CachingConnectionFactory connectionFactory() {
-        return new CachingConnectionFactory(hostname);
-    }
-
-    @Bean
-    public RabbitAdmin amqpAdmin() {
-        return new RabbitAdmin(connectionFactory());
-    }
-
-    @Bean
-    public RabbitTemplate rabbitTemplate() {
-        return new RabbitTemplate(connectionFactory());
-    }
 
     @Bean
     public Queue myQueue() {
