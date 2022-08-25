@@ -9,7 +9,7 @@ public class User {
     @SequenceGenerator(name = "user_sequence", sequenceName = "user_sequence", allocationSize = 1)
     @GeneratedValue(generator = "user_sequence")
     private Long id;
-    private  String username;
+    private String username;
 
     public User() {
     }
