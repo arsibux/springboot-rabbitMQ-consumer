@@ -6,12 +6,12 @@ Demo project for springboot message consumer using [rabbitMQ](https://www.rabbit
 
 RabbitMQ is one of the most popular open source message brokers.
 
-![rabbitMQ producer service](https://github.com/arsibux/springboot-rabbitMQ-consumer/blob/main/draw_io/rabbitmq-producer.drawio.png "rabbitMQ producer service")
+![rabbitMQ consumer service](https://github.com/arsibux/springboot-rabbitMQ-consumer/blob/main/draw_io/rabbitmq-consumer.drawio.png "rabbitMQ consumer service")
 
 ## Installation
 
 1. Run command at code directory `git clone https://github.com/arsibux/springboot-rabbitMQ-consumer.git`
-2. Run `docker-compose up -d` [docker-desktop installaton](https://docs.docker.com/desktop/)
+2. Run `docker-compose up -d` [docker-desktop installation](https://docs.docker.com/desktop/)
 3. Open Project in [IntelliJ Idea](https://www.jetbrains.com/idea/download/).
 4. Run `mvn clean install` and run `mvn spring-boot:run`
 5. Import workspace file of [Postman](https://www.postman.com/downloads/)
@@ -21,8 +21,7 @@ RabbitMQ is one of the most popular open source message brokers.
 
 You can see the message here at terminal.
 
-![terminal](https://github.com/arsibux/springboot-rabbitMQ-producer/blob/main/docs/img/terminal.png "terminal")
-
+![terminal](https://github.com/arsibux/springboot-rabbitMQ-consumer/blob/main/docs/img/terminal.png "terminal")
 
 ## Resources
 
